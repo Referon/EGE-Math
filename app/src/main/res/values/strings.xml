@@ -3,4 +3,6 @@
     <string name="logo">LOGO</string>
     <string name="theory">Теория</string>
     <string name="formulas">Формулы</string>
+    <string name="operations_with_numbers">Операции с числами</string>
+    <string name="probability_theory">Теория вероятности</string>
 </resources>

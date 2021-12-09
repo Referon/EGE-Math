@@ -23,4 +23,9 @@ class TheoryActivity : AppCompatActivity() {
         val probabilityTheory = Intent(this, ProbabilityTheory::class.java)
         startActivity(probabilityTheory)
     }
+
+    fun operationsWithDegreesActivity(view: View) {
+        val operationsWithDegrees = Intent(this, OperationsWithDegrees::class.java)
+        startActivity(operationsWithDegrees)
+    }
 }
