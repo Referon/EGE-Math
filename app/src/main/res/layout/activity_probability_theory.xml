@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OperationsWithNumbers">
+    tools:context=".ProbabilityTheory">
 
     <ScrollView
         android:layout_width="409dp"
@@ -14,7 +14,7 @@
         tools:ignore="MissingConstraints">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
@@ -26,13 +26,15 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="50dp"
                 android:lineSpacingMultiplier="1.8"
-                android:text="@string/operationsWithNumbers"
+                android:text="@string/probabilityTheory"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
         </LinearLayout>
+
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

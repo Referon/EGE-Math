@@ -7,17 +7,31 @@
     tools:context=".TheoryActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/operation_with_numbers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button_states"
         android:fontFamily="@font/micrac"
         android:onClick="operationWithNumbersActivity"
         android:shape="rectangle"
-        android:text="Операции с числами"
+        android:text="@string/operations_with_numbers"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="160dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+        android:id="@+id/probability_theory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_states"
+        android:fontFamily="@font/micrac"
+        android:onClick="probabilityTheoryActivity"
+        android:shape="rectangle"
+        android:text="@string/probability_theory"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/operation_with_numbers"
+        android:layout_marginTop="16dp"
         tools:ignore="MissingConstraints,OnClick" />
 
 

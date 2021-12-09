@@ -18,4 +18,9 @@ class TheoryActivity : AppCompatActivity() {
         val operationWithNumbers = Intent(this, OperationsWithNumbers::class.java)
         startActivity(operationWithNumbers)
     }
+
+    fun probabilityTheoryActivity(view: View) {
+        val probabilityTheory = Intent(this, ProbabilityTheory::class.java)
+        startActivity(probabilityTheory)
+    }
 }
