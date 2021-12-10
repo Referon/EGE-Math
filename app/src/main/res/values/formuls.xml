@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="formulasText">
+        <b>Основные тригонометрические тождества</b> \n
+        \n
+        sin^2 a + cos^2 a = 1\n
+        tg α = sinα / cosα , ctg α = cosα / sinα\n
+        tg α ⋅ ctg α = 1\n
+        tg^2 α + 1 = 1 / cos^2 α , ctg^2 α + 1 = 1 / sin^2 α\n
+        \n
+        <b>Формулы приведения</b> \n
+        \n
+        sin ( α + 2 π z ) = sin α ,   cos ( α + 2 π z ) = cos α \n
+        \n
+		tg ( α + 2 π z ) = tg α ,   ctg ( α + 2 π z ) = ctg α \n
+        \n
+		sin ( − α + 2 π z ) = − sin α ,   cos ( − α + 2 π z ) = cos α \n
+        \n
+		tg ( − α + 2 π z ) = − tg α ,   ctg ( − α + 2 π z ) = − ctg α \n
+        \n
+		sin ( π/2 + α + 2 π z ) = cos α ,   cos ( π/2 + α + 2 π z ) = − sin α \n
+		\n
+        tg ( π/2 + α + 2 π z ) = − ctg α ,   ctg ( π/2 + α + 2 π z ) = − tg α \n
+		\n
+        sin ( π/2 − α + 2 π z ) = cos α ,   cos ( π/2 − α + 2 π z ) = sin α \n
+		\n
+        tg ( π/2 − α + 2 π z ) = ctg α ,   ctg ( π/2 − α + 2 π z ) = tg α \n
+		\n
+        sin ( π + α + 2 π z ) = − sin α ,   cos ( π + α + 2 π z ) = − cos α \n
+		\n
+        tg ( π + α + 2 π z ) = tg α ,   ctg ( π + α + 2 π z ) = ctg α \n
+		\n
+        sin ( π − α + 2 π z ) = sin α ,   cos ( π − α + 2 π z ) = − cos α \n
+		\n
+        tg ( π − α + 2 π z ) = − tg α ,   ctg ( π − α + 2 π z ) = − ctg α \n
+		\n
+        sin ( 3 π/2 + α + 2 π z ) = − cos α ,   cos ( 3 π/2 + α + 2 π z ) = sin α \n
+		\n
+        tg ( 3 π/2 + α + 2 π z ) = − ctg α ,   ctg ( 3 π/2 + α + 2 π z ) = − tg α \n
+		\n
+        sin ( 3 π/2 − α + 2 π z ) = − cos α ,   cos ( 3 π/2 − α + 2 π z ) = − sin α \n
+		\n
+        tg ( 3 π/2 − α + 2 π z ) = ctg α ,   ctg ( 3 π/2 − α + 2 π z ) = tg α \n
+        \n
+        <b>Формулы приведения</b> \n
+        \n
+
+    </string>
+    
+</resources>

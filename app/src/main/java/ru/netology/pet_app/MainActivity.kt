@@ -28,4 +28,9 @@ class MainActivity : AppCompatActivity() {
         val theory = Intent(this, TheoryActivity::class.java)
         startActivity(theory)
     }
+
+    fun formulasActivity(view: View) {
+        val formulas = Intent(this, FormulasActivity::class.java)
+        startActivity(formulas)
+    }
 }
