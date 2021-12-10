@@ -27,7 +27,7 @@
                 android:layout_marginEnd="50dp"
                 android:lineSpacingMultiplier="1.8"
                 android:text="@string/operationsWithNumbers"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
