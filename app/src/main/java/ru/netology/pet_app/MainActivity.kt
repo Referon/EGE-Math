@@ -10,7 +10,6 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
-    var btnActTwo: Button? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -32,5 +31,10 @@ class MainActivity : AppCompatActivity() {
     fun formulasActivity(view: View) {
         val formulas = Intent(this, FormulasActivity::class.java)
         startActivity(formulas)
+    }
+
+    fun testsActivity(view: View) {
+        val tests = Intent(this, TestsActivity::class.java)
+        startActivity(tests)
     }
 }
