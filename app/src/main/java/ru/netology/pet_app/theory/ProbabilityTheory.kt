@@ -1,11 +1,12 @@
-package ru.netology.pet_app
+package ru.netology.pet_app.theory
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ru.netology.pet_app.R
 
-class OperationsWithDegrees : AppCompatActivity() {
+class ProbabilityTheory : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_operations_with_degrees)
+        setContentView(R.layout.activity_probability_theory)
     }
 }

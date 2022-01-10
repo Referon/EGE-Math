@@ -1,11 +1,10 @@
-package ru.netology.pet_app
+package ru.netology.pet_app.theory
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.webkit.WebView
-import android.widget.TextView
+import ru.netology.pet_app.R
 
 class TheoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

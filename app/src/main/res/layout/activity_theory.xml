@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_light_background"
-    tools:context=".TheoryActivity">
+    tools:context=".theory.TheoryActivity">
 
     <Button
         android:id="@+id/operation_with_numbers"

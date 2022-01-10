@@ -14,19 +14,19 @@
             android:name=".TestsActivity"
             android:exported="true" />
         <activity
-            android:name=".FormulasActivity"
+            android:name=".theory.FormulasActivity"
             android:exported="true" />
         <activity
-            android:name=".OperationsWithDegrees"
+            android:name=".theory.OperationsWithDegrees"
             android:exported="true" />
         <activity
-            android:name=".ProbabilityTheory"
+            android:name=".theory.ProbabilityTheory"
             android:exported="true" />
         <activity
-            android:name=".OperationsWithNumbers"
+            android:name=".theory.OperationsWithNumbers"
             android:exported="true" />
         <activity
-            android:name=".TheoryActivity"
+            android:name=".theory.TheoryActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

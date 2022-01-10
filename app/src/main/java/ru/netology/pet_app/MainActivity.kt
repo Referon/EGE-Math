@@ -4,8 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.content.Intent
-import android.widget.Button
 import android.widget.Toast
+import ru.netology.pet_app.theory.FormulasActivity
+import ru.netology.pet_app.theory.TheoryActivity
 
 
 class MainActivity : AppCompatActivity() {
