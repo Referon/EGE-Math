@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Petapp">
         <activity
+            android:name=".TestP1"
+            android:exported="true" />
+        <activity
             android:name=".TestsActivity"
             android:exported="true" />
         <activity
