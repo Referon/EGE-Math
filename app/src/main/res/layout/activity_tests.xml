@@ -6,4 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".TestsActivity">
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/arialuni"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Вычисления"
+        android:onClick="operationOne"
+        android:background="@drawable/button_states"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="60dp"
+        tools:ignore="MissingConstraints,OnClick"/>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
