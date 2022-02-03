@@ -12,7 +12,7 @@ class TestsActivity : AppCompatActivity() {
     }
 
     fun operationOne(view: View) {
-        val operationOne = Intent(this, TestP1::class.java)
+        val operationOne = Intent(this, TestP1Activity::class.java)
         startActivity(operationOne)
     }
 }

@@ -13,9 +13,7 @@ class MyDialogFragment : DialogFragment() {
 
     private var title: String? = null
     private var message: String? = null
-    private var id: Int? = null
     private var activity: Activity? = null
-    private var viewModel: PostViewModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,9 +35,6 @@ class MyDialogFragment : DialogFragment() {
                 .setPositiveButton("Далее") {
                         dialog, id ->  updateActivity()
                 }
-                .setNegativeButton("Пропустить") {
-                    dialog, id -> next()
-                }
                 .setNeutralButton("Назад") {
                         dialog, id -> dialog.cancel()
                     }
@@ -53,27 +48,16 @@ class MyDialogFragment : DialogFragment() {
         context?.startActivity(intent)
     }
 
-    fun next() {
-        val intent: Intent = Intent(context, activity!!::class.java)
-        id?.let { viewModel?.setDecidedById(it) }
-        activity?.finish()
-        context?.startActivity(intent)
-    }
-
-
-
 
     companion object {
         const val TAG = "myDialog"
         private const val ARG_TITLE = "argTitle"
         private const val ARG_MESSAGE = "argMessage"
 
-        fun newInstance(id1: Int, title: String, message: String, activity1: Activity, viewModel1: PostViewModel) = MyDialogFragment().apply {
+        fun newInstance(title: String, message: String, activity1: Activity) = MyDialogFragment().apply {
             arguments = Bundle().apply {
                 putString(ARG_TITLE, title)
                 putString(ARG_MESSAGE, message)
-                viewModel = viewModel1
-                id = id1
                 activity = activity1
             }
         }
