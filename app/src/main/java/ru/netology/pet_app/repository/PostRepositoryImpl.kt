@@ -27,4 +27,8 @@ class PostRepositoryImpl(private val dao: TaskDao) : PostRepository {
         return dao.getAnswerById(id).toString()
     }
 
+    override fun resetAllDecided() {
+        dao.resetAllDecided()
+    }
+
 }

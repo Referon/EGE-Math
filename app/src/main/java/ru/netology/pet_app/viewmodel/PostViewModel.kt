@@ -15,4 +15,5 @@ class PostViewModel(application: Application): AndroidViewModel(application) {
     fun getId(): Int = repository.getId()
     fun getSize() = repository.getSize()
     fun setDecidedById(id: Int) = repository.setDecidedByID(id)
+    fun resetAllDecided() = repository.resetAllDecided()
 }

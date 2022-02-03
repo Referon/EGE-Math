@@ -8,4 +8,5 @@ interface PostRepository {
     fun getId(): Int
     fun getSize(): Int
     fun setDecidedByID(id: Int)
+    fun resetAllDecided()
 }

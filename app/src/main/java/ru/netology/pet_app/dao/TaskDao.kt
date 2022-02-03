@@ -21,4 +21,7 @@ interface TaskDao {
     @Query("UPDATE TaskEntity SET decided = 1 WHERE id = :id")
     fun setDecidedById(id: Int)
 
+    @Query("UPDATE TaskEntity SET decided = 0")
+    fun resetAllDecided()
+
 }
