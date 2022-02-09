@@ -38,4 +38,9 @@ class MainActivity : AppCompatActivity() {
         val tests = Intent(this, TestsActivity::class.java)
         startActivity(tests)
     }
+
+    fun variantsActivity(view: View) {
+        val variants = Intent(this, VariantsActivity::class.java)
+        startActivity(variants)
+    }
 }

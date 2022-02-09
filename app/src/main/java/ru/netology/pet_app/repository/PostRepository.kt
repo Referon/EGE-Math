@@ -1,12 +1,34 @@
 package ru.netology.pet_app.repository
 
+import androidx.lifecycle.LiveData
+import ru.netology.pet_app.data.YorTaskVariant
+
 
 interface PostRepository {
 
+    fun getIdVariant(typeV: Int): Int
+    fun getAnswerVariantById(id: Int): String
+    fun getMessageVariantById(id: Int): String
+    fun getPictureVariantById(id: Int): Int
+    fun setDecidedVariantById(id: Int)
+    fun removeDecidedVariant(typeV: Int)
+
+
+
+
+    //    fun getMessageByIdVariant(id: Int): String
+    //YorVariantTask
+    fun deleteVariant()
+    fun getTaskVariant(): LiveData<List<YorTaskVariant>>
+    fun saveTaskVariant(task: YorTaskVariant)
+    fun sizeSaveTask(): Int
+
+    //TaskEntity
     fun getAnswerById(id: Int): String
-    fun getMessageById(id: Int): String?
+    fun getMessageById(id: Int): String
     fun getId(): Int
     fun getSize(): Int
+    fun getPictureById(id: Int): Int
     fun setDecidedByID(id: Int)
     fun resetAllDecided()
 }

@@ -1,15 +1,15 @@
-package ru.netology.pet_app
+package ru.netology.pet_app.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class TaskEntity(
+data class TaskVariantEntity(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
-    val type: String,
+    val type: Int,
     val message: String,
     val answer: String,
-    val decided: Boolean,
-    val picture: Int? = null
+    val picture: Int? = null,
+    val decided: Int
 )

@@ -4,10 +4,13 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import ru.netology.pet_app.TaskEntity
+import ru.netology.pet_app.data.TaskEntity
+import ru.netology.pet_app.data.YorTaskVariantEntity
 import ru.netology.pet_app.dao.TaskDao
+import ru.netology.pet_app.data.TaskVariant
+import ru.netology.pet_app.data.TaskVariantEntity
 
-@Database(entities = [TaskEntity::class], version = 1, exportSchema = false)
+@Database(entities = [TaskEntity::class, YorTaskVariantEntity::class, TaskVariantEntity::class], version = 1, exportSchema = false)
 abstract class AppDb : RoomDatabase() {
     abstract fun taskDao(): TaskDao
 

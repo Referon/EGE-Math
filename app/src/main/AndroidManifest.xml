@@ -11,6 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Petapp">
         <activity
+            android:name=".ResultVariantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Variant1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".VariantsActivity"
+            android:exported="false" />
+        <activity
             android:name=".TestP1Activity"
             android:exported="true" />
         <activity
