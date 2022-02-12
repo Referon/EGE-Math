@@ -5,6 +5,6 @@ data class TaskVariant(
     val type: Int,
     val message: String,
     val answer: String,
-    val picture: Int? = null,
+    val picture: String? = "",
     val decided: Int
 )

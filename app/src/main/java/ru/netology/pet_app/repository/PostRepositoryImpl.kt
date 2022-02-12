@@ -19,7 +19,7 @@ class PostRepositoryImpl(private val dao: TaskDao) : PostRepository {
 
     override fun getMessageVariantById(id: Int): String = dao.getMessageVariantById(id)
 
-    override fun getPictureVariantById(id: Int): Int = dao.getPictureVariantById(id)
+    override fun getPictureVariantById(id: Int): String = dao.getPictureVariantById(id)
 
     override fun setDecidedVariantById(id: Int) {
         dao.setDecidedVariantById(id)

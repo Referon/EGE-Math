@@ -10,7 +10,7 @@ import ru.netology.pet_app.data.YorTaskVariantEntity
 interface TaskDao {
 
     @Query("SELECT picture FROM TaskVariantEntity WHERE id = :id")
-    fun getPictureVariantById(id: Int): Int
+    fun getPictureVariantById(id: Int): String
 
     @Query("SELECT message FROM TaskVariantEntity WHERE id = :id")
     fun getMessageVariantById(id: Int): String

@@ -9,7 +9,7 @@ interface PostRepository {
     fun getIdVariant(typeV: Int): Int
     fun getAnswerVariantById(id: Int): String
     fun getMessageVariantById(id: Int): String
-    fun getPictureVariantById(id: Int): Int
+    fun getPictureVariantById(id: Int): String
     fun setDecidedVariantById(id: Int)
     fun removeDecidedVariant(typeV: Int)
 

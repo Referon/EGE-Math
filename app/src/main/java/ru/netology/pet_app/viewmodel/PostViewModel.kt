@@ -16,7 +16,7 @@ class PostViewModel(application: Application): AndroidViewModel(application) {
     fun getIdVariant(typeV: Int): Int = repository.getIdVariant(typeV)
     fun getAnswerVariantById(id: Int): String = repository.getAnswerVariantById(id)
     fun getMessageVariantById(id: Int): String = repository.getMessageVariantById(id)
-    fun getPictureVariantById(id: Int): Int = repository.getPictureVariantById(id)
+    fun getPictureVariantById(id: Int): String = repository.getPictureVariantById(id)
     fun setDecidedVariantById(id: Int) = repository.setDecidedVariantById(id)
     fun removeDecidedVariant(typeV: Int) = repository.removeDecidedVariant(typeV)
 

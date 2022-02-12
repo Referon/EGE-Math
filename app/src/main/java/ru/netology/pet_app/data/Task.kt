@@ -6,5 +6,5 @@ data class Task(
     val message: String,
     val answer: String,
     val decided: Boolean,
-    val picture: Int? = null
+    val picture: String? = ""
 )

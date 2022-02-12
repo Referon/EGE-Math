@@ -6,6 +6,6 @@ data class YorTaskVariant(
     val message: String,
     val answer: String,
     val yourAnswer: String? = null,
-    val picture: Int? = null,
+    val picture: String? = "",
     val decided: Int
 )
