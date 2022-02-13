@@ -36,4 +36,9 @@ class ResultVariantActivity : AppCompatActivity() {
         viewModel.deleteVariant()
         super.onBackPressed()
     }
+
+    override fun onDestroy() {
+        viewModel.deleteVariant()
+        super.onDestroy()
+    }
 }
