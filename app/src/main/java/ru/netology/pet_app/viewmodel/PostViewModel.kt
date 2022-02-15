@@ -28,11 +28,11 @@ class PostViewModel(application: Application): AndroidViewModel(application) {
     val data = repository.getTaskVariant()
 
     //TaskEntity
-    fun getId(): Int = repository.getId()
+    fun getId(type: Int): Int = repository.getId(type)
     fun getMessageById(id: Int): String = repository.getMessageById(id)
     fun getAnswerById(id: Int): String = repository.getAnswerById(id)
-    fun getPictureById(id: Int): Int = repository.getPictureById(id)
-    fun getSize() = repository.getSize()
+    fun getPictureById(id: Int): String = repository.getPictureById(id)
+    fun getSize(type: Int) = repository.getSize(type)
     fun setDecidedById(id: Int) = repository.setDecidedByID(id)
     fun resetAllDecided() = repository.resetAllDecided()
 //    fun getTaskVariant():MutableList<YorTaskVariant> = repository.getTaskVariant()

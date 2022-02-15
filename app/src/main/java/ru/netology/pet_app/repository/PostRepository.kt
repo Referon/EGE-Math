@@ -26,9 +26,9 @@ interface PostRepository {
     //TaskEntity
     fun getAnswerById(id: Int): String
     fun getMessageById(id: Int): String
-    fun getId(): Int
-    fun getSize(): Int
-    fun getPictureById(id: Int): Int
+    fun getId(type: Int): Int
+    fun getSize(type: Int): Int
+    fun getPictureById(id: Int): String
     fun setDecidedByID(id: Int)
     fun resetAllDecided()
 }

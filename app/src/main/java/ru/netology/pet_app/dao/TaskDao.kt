@@ -48,8 +48,8 @@ interface TaskDao {
 
     //TaskEntity
 
-    @Query("SELECT id FROM TaskEntity WHERE decided = 0 ORDER BY random()")
-    fun getId(): Int
+    @Query("SELECT id FROM TaskEntity WHERE decided = 0 AND type = :type ORDER BY random()")
+    fun getId(type: Int): Int
 
     @Query("SELECT message FROM TaskEntity WHERE id = :id")
     fun getMessageById(id: Int): String
@@ -57,8 +57,8 @@ interface TaskDao {
     @Query("SELECT answer FROM TaskEntity WHERE id = :id")
     fun getAnswerById(id: Int): String
 
-    @Query("SELECT COUNT(id) FROM TaskEntity WHERE decided = 0")
-    fun getSize(): Int
+    @Query("SELECT COUNT(id) FROM TaskEntity WHERE decided = 0 AND type = :type")
+    fun getSize(type: Int): Int
 
     @Query("UPDATE TaskEntity SET decided = 1 WHERE id = :id")
     fun setDecidedById(id: Int)
@@ -67,6 +67,6 @@ interface TaskDao {
     fun resetAllDecided()
 
     @Query("SELECT picture FROM TaskEntity WHERE id = :id")
-    fun getPictureById(id: Int): Int
+    fun getPictureById(id: Int): String
 
 }

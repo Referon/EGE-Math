@@ -48,7 +48,7 @@ class PostRepositoryImpl(private val dao: TaskDao) : PostRepository {
 
     //TaskEntity
 
-    override fun getPictureById(id: Int): Int {
+    override fun getPictureById(id: Int): String {
         return dao.getPictureById(id)
     }
 
@@ -57,16 +57,16 @@ class PostRepositoryImpl(private val dao: TaskDao) : PostRepository {
         return dao.getMessageById(id).toString()
     }
 
-    override fun getId(): Int {
-        return dao.getId()
+    override fun getId(type: Int): Int {
+        return dao.getId(type)
     }
 
     override fun setDecidedByID(id: Int) {
         dao.setDecidedById(id)
     }
 
-    override fun getSize(): Int {
-        return dao.getSize()
+    override fun getSize(type: Int): Int {
+        return dao.getSize(type)
     }
 
     override fun getAnswerById(id: Int): String {
