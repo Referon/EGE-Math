@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/card_variant">
+    android:id="@+id/result_variant">
 
     <TextView
         android:id="@+id/message"

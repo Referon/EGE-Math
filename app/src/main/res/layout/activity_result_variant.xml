@@ -12,6 +12,6 @@
         android:layout_height="0dp"
         tools:ignore="MissingConstraints"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/card_variant"/>
+        tools:listitem="@layout/result_variant"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

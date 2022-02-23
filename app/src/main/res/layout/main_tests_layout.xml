@@ -4,20 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Variant1Activity"
+    tools:context=".tests.Test1"
     android:background="@color/silver">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/test_message_states"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/barrier2"
+        android:layout_margin="16dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/messgae"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
         android:textColor="@color/black"
         android:textSize="18sp"
-
+        android:scrollbars="vertical"
         android:lineSpacingMultiplier="1.5"
-        android:background="@drawable/test_message_states"
-        app:layout_constraintBottom_toTopOf="@id/barrier2"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
@@ -27,10 +35,12 @@
         android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/messgae"
-        app:layout_constraintEnd_toEndOf="@id/messgae"
-        app:layout_constraintStart_toStartOf="@id/messgae"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@id/background"
+        app:layout_constraintTop_toBottomOf="@id/messgae"
+        app:layout_constraintStart_toStartOf="@id/background"
         android:layout_marginBottom="10dp"
+        tools:src="@drawable/pic1"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -38,15 +48,17 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="16dp"
+        android:background="@drawable/test_message_states"
+        android:hint="Ответ:"
+        android:paddingVertical="14dp"
         app:layout_constraintBottom_toTopOf="@id/barrier"
         tools:ignore="MissingConstraints"
-        android:background="@drawable/test_message_states"
-        android:hint="Ответ:" />
+        tools:layout_editor_absoluteX="16dp" />
 
 
 
     <Button
-        android:id="@+id/next"
+        android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -55,7 +67,7 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Далее"
+        android:text="Проверить"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
         android:clickable="true" />
@@ -66,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="visible"
-        app:constraint_referenced_ids="next" />
+        app:constraint_referenced_ids="result" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
@@ -75,7 +87,7 @@
         tools:ignore="MissingConstraints"
         android:layout_marginTop="90dp"
         app:barrierDirection="top"
-        app:constraint_referenced_ids="next"/>
+        app:constraint_referenced_ids="result"/>
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"
