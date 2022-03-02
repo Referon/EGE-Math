@@ -6,11 +6,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/result_variant">
 
+    <View
+        android:id="@+id/background_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="12dp"
+        android:background="@drawable/result_view" />
+
     <TextView
         android:id="@+id/message"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/background_view"
+        app:layout_constraintStart_toStartOf="@id/background_view"
+        app:layout_constraintTop_toTopOf="@id/background_view"
         tools:text="Задача 1"
+        android:textColor="@color/white"
         android:textSize="24sp"
         tools:ignore="MissingConstraints" />
 
@@ -18,30 +36,38 @@
         android:id="@+id/answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         tools:text="Ответ 1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@id/message"
+        app:layout_constraintStart_toStartOf="@id/background_view"
+        app:layout_constraintTop_toBottomOf="@id/pictures"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/yor_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginVertical="16dp"
         tools:text="Ваш ответ 1"
+        android:textColor="@color/white"
         android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/background_view"
         app:layout_constraintTop_toBottomOf="@id/answer"
+        app:layout_constraintBottom_toBottomOf="@id/background_view"
         tools:ignore="MissingConstraints" />
 
-    <View
-        android:id="@+id/topLineToEdit"
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        app:layout_constraintBottom_toBottomOf="@id/yor_answer"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/black" />
-
-
-
+    <ImageView
+        android:id="@+id/pictures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/background_view"
+        app:layout_constraintStart_toStartOf="@id/background_view"
+        app:layout_constraintTop_toBottomOf="@id/message"
+        android:src="@drawable/ic_launcher_foreground"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

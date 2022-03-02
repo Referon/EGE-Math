@@ -11,6 +11,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Petapp">
         <activity
+            android:name=".theory.Theory11"
+            android:exported="false" />
+        <activity
+            android:name=".theory.Theory10"
+            android:exported="false" />
+        <activity
+            android:name=".theory.Theory9"
+            android:exported="false" />
+        <activity
+            android:name=".theory.Theory8"
+            android:exported="false" />
+        <activity
+            android:name=".theory.Theory7"
+            android:exported="false" />
+        <activity
+            android:name=".theory.Theory6"
+            android:exported="false" />
+        <activity
+            android:name=".theory.Theory5"
+            android:exported="false" />
+        <activity
+            android:name=".theory.Theory4"
+            android:exported="false" />
+        <activity
             android:name=".DraftActivity"
             android:exported="false" />
         <activity
@@ -89,13 +113,13 @@
             android:name=".theory.FormulasActivity"
             android:exported="true" />
         <activity
-            android:name=".theory.OperationsWithDegrees"
+            android:name=".theory.Theory2"
             android:exported="true" />
         <activity
-            android:name=".theory.ProbabilityTheory"
+            android:name=".theory.Theory3"
             android:exported="true" />
         <activity
-            android:name=".theory.OperationsWithNumbers"
+            android:name=".theory.Theory1"
             android:exported="true" />
         <activity
             android:name=".theory.TheoryActivity"

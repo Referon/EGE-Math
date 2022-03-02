@@ -8,4 +8,14 @@
     <string name="operations_with_numbers">Операции с числами</string>
     <string name="probability_theory">Теория вероятности</string>
     <string name="operation_with_degrees">Операции со степенями</string>
+    <string name="variant1">Вариант 1</string>
+    <string name="variant2">Вариант 2</string>
+    <string name="variant3">Вариант 3</string>
+    <string name="variant4">Вариант 4</string>
+    <string name="variant5">Вариант 5</string>
+    <string name="variant6">Вариант 6</string>
+    <string name="variant7">Вариант 7</string>
+    <string name="variant8">Вариант 8</string>
+    <string name="variant9">Вариант 9</string>
+    <string name="variant10">Вариант 10</string>
 </resources>

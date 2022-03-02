@@ -53,7 +53,8 @@
         android:paddingVertical="14dp"
         app:layout_constraintBottom_toTopOf="@id/barrier"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        android:textColorHint="@color/purple_100"
+        android:paddingStart="15dp" />
 
 
 

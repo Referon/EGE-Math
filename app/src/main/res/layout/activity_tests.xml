@@ -4,26 +4,186 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".TestsActivity">
 
-    <Button
-        android:id="@+id/button1"
+    <ImageView
+        android:id="@+id/up_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginStart="60dp"
-        android:fontFamily="@font/arialuni"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:text="Вычисления"
-        android:onClick="operationOne"
-        android:background="@drawable/button_states"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_goneMarginTop="60dp"
-        tools:ignore="MissingConstraints,OnClick"/>
+        android:background="@drawable/rectangle5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:text="Задания по темам"
+        android:textColor="@color/dark_blue"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/up_view"
+        app:layout_constraintStart_toStartOf="@id/up_view"
+        app:layout_constraintTop_toTopOf="@id/up_view"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toBottomOf="@+id/up_view"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Простейшие уравнения"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:onClick="test1"
+                android:background="@drawable/rectangle_button_low" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Теория вероятности"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:onClick="test2"
+                android:background="@drawable/rectangle_button_dark" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_medium"
+                android:layout_marginTop="22dp"
+                android:text="Планиметрия"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:onClick="test3"
+                />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_low"
+                android:layout_marginTop="22dp"
+                android:text="Вычисления \n и преобразования"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:onClick="test4"
+                />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_dark"
+                android:layout_marginTop="22dp"
+                android:text="Стереометрия"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:onClick="test5"
+                />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_medium"
+                android:layout_marginTop="22dp"
+                android:text="Производная"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:onClick="test6"
+                />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_low"
+                android:layout_marginTop="22dp"
+                android:text="Задачи \n прикладного содержания"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:onClick="test7"
+                />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_dark"
+                android:layout_marginTop="22dp"
+                android:text="Текстовые задачи"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:onClick="test8"
+                />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_medium"
+                android:layout_marginTop="22dp"
+                android:text="Функции и графики"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:onClick="test9"
+                />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_low"
+                android:layout_marginTop="22dp"
+                android:text="Вероятности \n сложных событий"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:onClick="test10"
+                />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_dark"
+                android:layout_marginTop="22dp"
+                android:text="Исследование функций"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:onClick="test11"
+                />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
