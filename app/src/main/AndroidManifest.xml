@@ -110,9 +110,6 @@
             android:name=".TestsActivity"
             android:exported="true" />
         <activity
-            android:name=".theory.FormulasActivity"
-            android:exported="true" />
-        <activity
             android:name=".theory.Theory2"
             android:exported="true" />
         <activity
