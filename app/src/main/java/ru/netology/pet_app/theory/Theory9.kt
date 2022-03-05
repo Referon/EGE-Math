@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ru.netology.pet_app.R
 
-class ProbabilityTheory : AppCompatActivity() {
+class Theory9 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_probability_theory)
+        setContentView(R.layout.activity_theory_9)
     }
 }

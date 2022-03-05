@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ru.netology.pet_app.R
 
-class FormulasActivity : AppCompatActivity() {
+class Theory7 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_formulas)
+        setContentView(R.layout.activity_theory_7)
     }
 }
