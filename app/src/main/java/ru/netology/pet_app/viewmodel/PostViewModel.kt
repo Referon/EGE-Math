@@ -36,4 +36,9 @@ class PostViewModel(application: Application): AndroidViewModel(application) {
     fun setDecidedById(id: Int) = repository.setDecidedByID(id)
     fun resetAllDecided() = repository.resetAllDecided()
 //    fun getTaskVariant():MutableList<YorTaskVariant> = repository.getTaskVariant()
+
+    //Draft
+    fun getDraftMessage():String = repository.getDraftMessage()
+    fun deleteDraftMessage() = repository.deleteDraftMessage()
+    fun saveDraftMEssage(message: String) = repository.saveDraftMEssage(message)
 }

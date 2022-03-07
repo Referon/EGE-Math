@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
+import ru.netology.pet_app.data.DraftEntity
 import ru.netology.pet_app.data.YorTaskVariantEntity
 
 @Dao
@@ -68,5 +69,23 @@ interface TaskDao {
 
     @Query("SELECT picture FROM TaskEntity WHERE id = :id")
     fun getPictureById(id: Int): String
+
+
+    //Draft
+
+    @Insert
+    fun insertDraft(message: DraftEntity)
+
+    fun saveDraftMessage(message: String) {
+        val saveMessage = DraftEntity(message = message)
+        insertDraft(saveMessage)
+    }
+
+    @Query("SELECT message FROM DraftEntity")
+    fun getDraftMessage(): String
+
+    @Query("DELETE FROM DraftEntity")
+    fun deleteDraftMessage()
+
 
 }

@@ -31,4 +31,9 @@ interface PostRepository {
     fun getPictureById(id: Int): String
     fun setDecidedByID(id: Int)
     fun resetAllDecided()
+
+    //Draft
+    fun getDraftMessage():String
+    fun deleteDraftMessage()
+    fun saveDraftMEssage(message: String)
 }

@@ -77,4 +77,16 @@ class PostRepositoryImpl(private val dao: TaskDao) : PostRepository {
         dao.resetAllDecided()
     }
 
+    //Draft
+
+    override fun getDraftMessage(): String = dao.getDraftMessage()
+
+    override fun deleteDraftMessage() {
+        dao.deleteDraftMessage()
+    }
+
+    override fun saveDraftMEssage(message: String) {
+        dao.saveDraftMessage(message)
+    }
+
 }

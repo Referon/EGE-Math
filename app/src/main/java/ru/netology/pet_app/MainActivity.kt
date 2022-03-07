@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import android.content.Intent
 import android.widget.Toast
-import ru.netology.pet_app.theory.FormulasActivity
 import ru.netology.pet_app.theory.TheoryActivity
 
 
@@ -29,9 +28,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(theory)
     }
 
-    fun formulasActivity(view: View) {
-        val formulas = Intent(this, FormulasActivity::class.java)
-        startActivity(formulas)
+    fun draftActivity(view: View) {
+        val draft = Intent(this, DraftActivity::class.java)
+        startActivity(draft)
     }
 
     fun testsActivity(view: View) {
